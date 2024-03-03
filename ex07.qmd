@@ -128,7 +128,7 @@ plot(LogNormal(1.5, 0.3), xlims=(0, 10), xlabel="Annual Maximum Flood Depth", yl
 plot!(GeneralizedExtremeValue(4.5, 1.5, 0.3), label="GEV(4.5, 1.5, 0.3)")
 ```
 
-What are the Monte Carlo estimates of the expected value and the 99% quantile for the annual maximum damage the structure would suffer for each of these flood hazard distributions? How did you ensure your sample size was sufficiently large?
+What are the Monte Carlo estimates of the expected value and the 99% quantile for the annual maximum damage the structure would suffer for each of these flood hazard distributions? How did you ensure your sample size was sufficiently large? Why do you think the estimates differed or did not differ?
 
 
 ## References
