@@ -1,25 +1,25 @@
-# Exercise 4:  Distributions and Extreme Values
+# Exercise 7:  Monte Carlo Simulation
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the repository for Exercise 4 for [BEE 4850](https://viveks.me/simulation-data-analysis), taught at [Cornell University](https://cornell.edu) in Spring 2024 by [Vivek Srikrishnan](https://viveks.me).
+This is the repository for Exercise 7 for [BEE 4850](https://viveks.me/simulation-data-analysis), taught at [Cornell University](https://cornell.edu) in Spring 2024 by [Vivek Srikrishnan](https://viveks.me).
 
-If enrolled in the class, a PDF of the completed exercise, **with all cells evaluated if a notebook**, should be submitted to Gradescope *no later* than Friday, February 16, 2024, at 9:00pm. 50% will be deducted if the notebook is submitted up to 24 hours late.
+If enrolled in the class, a PDF of the completed exercise, **with all cells evaluated if a notebook**, should be submitted to Gradescope *no later* than Friday, March 8, 2024, at 9:00pm. 50% will be deducted if the notebook is submitted up to 24 hours late.
 
 ## Learning Objectives
 
 After completing this lab, students will be able to:
 
-- evaluate the appropriateness of different probability distributions to fit a distribution of extreme values;
-- compare the goodness-of-fit of different distributions.
+- conduct simple Monte Carlo simulations;
+- compare the Monte Carlo outcomes from two different input distributions.
 
 ## Repository Overview
 
 The repository consists of the following files:
 
-- `ex04.ipynb`: Jupyter Notebook for the exercise. Students should create code or Markdown blocks as necessary to answer questions, or can write their code and solutions in a different file format. 
+- `ex07.ipynb`: Jupyter Notebook for the exercise. Students should create code or Markdown blocks as necessary to answer questions, or can write their code and solutions in a different file format. 
 - `Project.toml`, `Manifest.toml`: Julia environment files. These should just work, but feel free to add other packages as needed using the `Pkg` package manager. 
-- `ex04.qmd`: Source file for Jupyter notebook generation. You could modify this file to write your solution if you want to use [Quarto](https://quarto.org/).
+- `ex07.qmd`: Source file for Jupyter notebook generation. You could modify this file to write your solution if you want to use [Quarto](https://quarto.org/).
 - `LICENSE`: This material is licensed using the MIT license. You can ignore this for working on the problem set.
 - `README.md`: This file. You shouldn't need to touch this.
 - `.gitignore`: This tells `git` what files to ignore. You shouldn't need to touch this.
@@ -35,7 +35,7 @@ These are the prerequisites for using the Julia package environment and the note
     cd BEE4850/
     mkdir exercises
     cd exercises/
-    git clone https://github.com/BEE4850/ex-week04.git
+    git clone https://github.com/BEE4850/ex-week07.git
     ```
 
 ## Opening The Notebook
@@ -44,11 +44,11 @@ These are the prerequisites for using the Julia package environment and the note
   - Install an integrated development environment, or IDE (I recommend [VS Code](https://code.visualstudio.com/) with the [Julia extension](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia)). 
   - Use the [`IJulia.jl` package](https://github.com/JuliaLang/IJulia.jl). I've included this in the project environment (discussed below), so no further steps are needed.  
 2. Opening the notebook will depend on what you decided to do in the previous step. 
-  - If you installed VS Code, you should be able to just open `ex04.ipynb` and everything should just work. 
+  - If you installed VS Code, you should be able to just open `ex07.ipynb` and everything should just work. 
   - If you're using a different IDE, Google how to make sure that it is set up to run a Julia notebook.
   - If you want to use `IJulia.jl`, open a Julia prompt. You can do this by:
     - Using the `Julia-1.9` or equivalent graphical program, type `cd("BEE4850/exercises")` or whatever path points to your lab notebook folder;
-    - Navigating to your `BEE4850/exercises/ex-week04` folder and typing `julia` to open the prompt. Then:
+    - Navigating to your `BEE4850/exercises/ex-week07` folder and typing `julia` to open the prompt. Then:
     
       ```julia
       import Pkg
@@ -56,4 +56,4 @@ These are the prerequisites for using the Julia package environment and the note
       using IJulia
       notebook()
       ```
-      and you can navigate to and open `ex04.ipynb`.
+      and you can navigate to and open `ex07.ipynb`.
