@@ -1,5 +1,5 @@
 ---
-title: "Exercise Set 04: Monte Carlo Simulations"
+title: "Exercise Set 07: Monte Carlo Simulations"
 subtitle: "BEE 4850/5850, Fall 2024"
 format:
     html:        
